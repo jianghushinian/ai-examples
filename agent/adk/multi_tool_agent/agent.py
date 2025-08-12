@@ -1,23 +1,22 @@
+"""
+ref:
+    - https://google.github.io/adk-docs/get-started/quickstart/
+    - https://docs.litellm.ai/docs/providers/deepseek
+
+requirements:
+    - pip install google-adk
+    - pip install litellm
+
+run agent:
+    adk web
+    adk run multi_tool_agent
+"""
+
 import datetime
 from zoneinfo import ZoneInfo
 
 from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
-
-
-# NOTE:
-
-# ref:
-# - https://google.github.io/adk-docs/get-started/quickstart/
-# - https://docs.litellm.ai/docs/providers/deepseek
-
-# requirements:
-# - pip install google-adk
-# - pip install litellm
-
-# run agent:
-# adk web
-# adk run multi_tool_agent
 
 
 def get_weather(city: str) -> dict:
